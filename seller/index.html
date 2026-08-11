@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller - Digitaliza tus Ventas y Simplifica tu Negocio</title>
+
+</head>
+
+<link rel="stylesheet" href="seller.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="150"><img src="assets/icon.png" alt="Seller Logo" width="100" height="100"></td>
+                <td>
+                    <h1>SELLER - Sistema de Ventas para Vendedores</h1>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#Bienvenido" class="nav-link active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="#InstalacionConfiguracion" class="nav-link"><i class="fa-solid fa-circle-info"></i>
+                    Instalación y Configuración</a></li>
+            <li><a href="#Vendedores" class="nav-link"><i class="fa-solid fa-users"></i> Vendedores</a></li>
+            <li><a href="#Categorías" class="nav-link"><i class="fa-solid fa-newspaper"></i> Categorías</a></li>
+            <li><a href="#Productos" class="nav-link"><i class="fa-solid fa-tags"></i> Productos</a></li>
+            <li><a href="#Ofertas" class="nav-link"><i class="fa-solid fa-tags"></i> Ofertas</a></li>
+            <li><a href="#Clientes" class="nav-link"><i class="fa-solid fa-tags"></i> Clientes</a></li>
+            <li><a href="#Proveedores" class="nav-link"><i class="fa-solid fa-newspaper"></i> Proveedores</a>
+            </li>
+            <li><a href="#Ventas" class="nav-link"><i class="fa-solid fa-newspaper"></i> Ventas</a></li>
+            <li><a href="#Pagos" class="nav-link"><i class="fa-solid fa-comments"></i> Pagos</a></li>
+            <li><a href="#Soporte" class="nav-link"><i class="fa-solid fa-headset"></i> Soporte</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="Bienvenido">
+            <h2>¡Bienvenido a SELLER!</h2>
+            <p>Seller es una plataforma diseñada para facilitar la gestión de venta de productos a dueños de negocios,
+                pero sobre todo a vendedores de estos productos. Permite administrar
+                productos, ofertas, clientes, proveedores, ventas y pagos. Así el administrador del negocio puede tener
+                una mejor visión de sus ventas y pagos, mientras que los vendedores tendrán todas las herramientas
+                necesarias para realizar sus ventas de manera eficiente. Con Seller, puedes gestionar tu negocio de
+                manera sencilla y eficiente.
+                <br>Si no tienes una cuenta, puedes crear una cuenta con un email y contraseña o si tienes una cuenta de
+                google, tienes la opción de ingresar con esta. Si no estas registrado te reconocerá como administrador
+                de un negocio, y si estas registrado por alguien te dará la opción de ingresar como vendedor o de crear
+                otra cuenta de administrador para un nuevo negocio.
+            </p>
+        </section>
+
+        <section id="InstalacionConfiguracion">
+            <h2>Instalación y Configuración</h2>
+            <p>Para instalar Seller, sigue los siguientes pasos:</p>
+            <ol>
+                <li>Descarga la aplicación desde Google Play <i class="fab fa-google-play"></i>.</li>
+                <li>Abre la aplicación y crea una cuenta. Puesdes ingresar tambien con tu cuenta de google <i class="fab fa-google"></i>.</li>
+                <li>Te aparecerá una pantalla de bienvenida con un botón <button class="btn-añadir"><i class="fa-solid fa-store"></i>Crear Mi Propio Negocio</button>.</li>
+                <li>Configura las opciones según tus necesidades.</li>
+            </ol>
+        </section>
+
+        <section id="Vendedores">
+            <h2>Vendedores</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador</h3>
+                    <p>Aquí el administrador (creador de la cuenta principal), podrás gestionar los vendedores para su
+                        negocio.
+                        <details class="faq-item">
+                            <summary>Añadir Vendedor                        
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </summary>
+                            <p>Para registrar un nuevo vendedor tienes que acceder al drawer lateral izquierdo en la sección de "Vendedores". Presiona el botón "+ Añadir Vendedor" y te aparecerá un formulario para ingresar los datos del nuevo vendedor, con Nombre(*), Email(*) y Teléfono. Presiona <span class="btn-guardar">Guardar</span> para guardar los cambios, de lo contrario, <span class="btn-cancelar">Cancelar</span> para cancelar la operación.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Ver Vendedores                        
+                                <span><i class="fa-solid fa-eye"></i></span>
+                            </summary>
+                            <p>Para ver la lista de vendedores, ingresa al drawer lateral, a la sección "Vendedores".</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Editar Vendedor                        
+                                <span><i class="fa-solid fa-pen"></i></span>
+                            </summary>
+                            <p>Para editar un vendedor, ingresa al drawer lateral, a la sección "Vendedores" y haz clic en él. 
+                                Aparecerá un formulario para actualizar sus datos, una vez cambiados, presiona <span class="btn-guardar">Guardar</span> para guardar los cambios o <span class="btn-cancelar">Cancelar</span> para cancelar la operación.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Eliminar Vendedor                        
+                                <span><i class="fa-solid fa-trash-can"></i></span>
+                            </summary>
+                            <p>Para eliminar un vendedor es mucho mas sencillo, Ingresa al drawer lateral, a la sección "Vendedores", y desliza hacia la izquierda el vendedor que deseas eliminar. Aparecerá una opción <button style="color: red; border:0px">Eliminar</button> para confirmar la acción y <button style="color:#235083; border:0px">Cancelar</button> para descartar la operación. 
+                            <br><small>Si el vendedor tiene clientes asociados, estos pasarán a ser gestionados por el administrador.</small> </p>
+                        </details>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor</h3>
+                    <p>Si ya fuiste registrado como vendedor, podrás ingresar a la aplicación con tu cuenta de vendedor registrada por el administrador del negocio. Esta puede ser cuenta de algun servidor de correos o cuenta de Google <span class="fab fa-google"></span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Categorías">
+            <h2>Categorías</h2>
+            <div class="container">
+
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador</h3>
+
+                    <p>En categorías puedes definir las categorías de tus productos. Por ejemplo, si vendes ropa, puedes
+                        definir categorías como "Camisas", "Pantalones", etc. Esto te ayudará a organizar tus productos
+                        y
+                        facilitar su gestión.</p>
+                    <details class="faq-item">
+                        <summary>Añadir Categoría                        
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <p>Para registrar una nueva categoría tienes que acceder al drawer lateral izquierdo en la sección de "Categorías". Presiona el botón <button class="btn-añadir">+ Añadir Categoría</button> y te aparecerá un formulario para ingresar los datos de la nueva categoría. Presiona <span class="btn-guardar">Guardar</span> para guardar los cambios, de lo contrario, <span class="btn-cancelar">Cancelar</span> para cancelar la operación.</p>
+                        <small>También podrás crear una categoría desde la sección "Productos" al ingresar un nuevo producto en el apartado Categoría, botón <button class="fa-solid fa-plus"></button></small> </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Ver Categorías                        
+                            <span><i class="fa-solid fa-eye"></i></span>
+                        </summary>
+                        <p>Para ver la lista de categorías, ingresa al drawer lateral, a la sección "Categorías".</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Editar Categoría                        
+                            <span><i class="fa-solid fa-pen"></i></span>
+                        </summary>
+                        <p>Para editar una categoría, ingresa al drawer lateral, a la sección "Categorías" y haz clic en ella. Aparecerá un formulario para actualizar sus datos. Una vez cambiados, presiona <button class="btn-guardar">Guardar</button> para guardar los cambios o <button class="btn-cancelar">Cancelar</button> para cancelar la operación.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Eliminar Categoría                        
+                            <span><i class="fa-solid fa-trash-can"></i></span>
+                        </summary>
+                        <p>Para eliminar una categoría, ingresa al drawer lateral, a la sección "Categorías", y desliza hacia la izquierda la categoría que deseas eliminar. Aparecerá una opción <button style="color: red; border:0px">Eliminar</button> para confirmar la acción y <button style="color:#235083; border:0px">Cancelar</button> para descartar la operación. </p>
+                        <small>Si la categoría tiene productos asociados, te aparecerá un error: Esta categoría esta asisganda a uno o más productos y no puede ser eliminada.</small> </p>
+                    </details>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor</h3>
+                    <p>Si eres vendedor, podrás ver las categorías registradas por el administrador del negocio(en forma de lista), al momento de agregar un nuevo producto y podrás agregar una categoría desde ahí con el botón <button class="fa-solid fa-plus"></button>.</p>
+            </div>
+        </section>
+
+        <section id="Productos">
+            <h2>Productos</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador</h3>
+                    <p>Si eres administrador de un negocio, en esta sección podrás gestionar los productos de tu
+                        negocio.
+                    </p>
+                    <details class="faq-item">
+                        <summary>Añadir Producto                        
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <p>Para registrar un nuevo producto tienes que acceder al drawer lateral izquierdo en la sección de "Productos". Presiona el botón <button class="btn-añadir">+ Añadir Producto</button> y te aparecerá un formulario para ingresar los datos del nuevo producto. Presiona <span class="btn-guardar">Guardar</span> para guardar los cambios, de lo contrario, <span class="btn-cancelar">Cancelar</span> para cancelar la operación.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Ver Productos                        
+                            <span><i class="fa-solid fa-eye"></i></span>
+                        </summary>
+                        <p>Para ver la lista de productos, ingresa al drawer lateral, a la sección "Productos".</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Modificar Producto                        
+                            <span><i class="fa-solid fa-pen"></i></span>
+                        </summary>
+                        <p>Para modificar un producto, ingresa al drawer lateral, a la sección "Productos", y haz clic en el producto que deseas actualizar. Aparecerá un formulario para modificar sus datos. Una vez cambiados, presiona <button class="btn-guardar">Guardar</button> para guardar los cambios o <button class="btn-cancelar">Cancelar</button> para cancelar la operación.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Eliminar Producto                        
+                            <span><i class="fa-solid fa-trash-can"></i></span>
+                        </summary>
+                        <p>Para eliminar un producto, ingresa al drawer lateral, a la sección "Productos", y desliza hacia la izquierda el producto que deseas eliminar. Aparecerá una opción <button style="color: red; border:0px">Eliminar</button> para confirmar la acción y <button style="color:#235083; border:0px">Cancelar</button> para descartar la operación.</p>
+                    </details>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor</h3>
+                    <p>ingresar productos, modificar productos, ver productos.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Ofertas">
+            <h2>Ofertas</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>Para ingresar una oferta debes ingresar al apartado de ofertas y presionar el botón "+ Añadir
+                        Oferta"
+                        e ingresar la siguiente información:
+                        En "buscar producto", puedes escribir el nombre del producto o escanear el código de barras para
+                        buscarlo.
+                        En "nombre oferta", ingresa el nombre de la oferta, por ejemplo "oferta por Caja".
+                        En "cantidad mínima", ingresa la cantidad mínima de unidades para aplicar la oferta.
+                        En "precio oferta", ingresa el precio de oferta neto o con impuesto, según el check.
+                        Finalmente presione "Guardar".
+                        <br>También se puede lograr ingresando desde el apartado de productos a un producto específico y
+                        luego
+                        en el apartado de "ofertas" presionar "Añadir Oferta" siguiendo la misma lógica anterior.
+                    </p>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                    </h3>
+                    <p>ingresar ofertas, modificar ofertas, ver ofertas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Clientes">
+            <h2>Clientes</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>En la sección de clientes la aplicación mostrará todos los clientes registrados en el sistema.
+                        <br>Para agregar un cliente debes presionar el botón [+] Añadir Cliente e ingresar la
+                        información
+                        relacionada con este, como Nombre del Cliente, DNI o identificador del negocio cliente, persona
+                        de
+                        contacto, teléfono, email, dirección y ciudad. Una vez ingresada esta información debes
+                        presionar
+                        "Guardar".
+                    </p>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>ingresar clientes, modificar clientes, ver clientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Proveedores">
+            <h2>Proveedores</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>En la sección de proveedores la aplicación mostrará todos los proveedores registrados en el
+                        sistema.
+                        <br>Para agregar un proveedor debes presionar el botón [+] Añadir Proveedor e ingresar la
+                        información
+                        relacionada con este, como Nombre del Proveedor, DNI o identificador del negocio proveedor,
+                        persona de
+                        contacto, teléfono, email, dirección y ciudad. Una vez ingresada esta información debes
+                        presionar
+                        "Guardar".
+                    </p>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                    </h3>
+                    <p>ingresar proveedores, modificar proveedores, ver proveedores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Ventas">
+            <h2>Ventas</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>En la sección de ventas la aplicación mostrará todos los ventas registradas en el sistema.
+                        <br>Para agregar una venta debes presionar el botón [+] Añadir Venta e ingresar la información
+                        relacionada con esta, como Nombre del Vendedor, DNI o identificador del negocio vendedor,
+                        persona de
+                        contacto, teléfono, email, dirección y ciudad. Una vez ingresada esta información debes
+                        presionar
+                        "Guardar".
+                    </p>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>ingresar ventas, modificar ventas, ver ventas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Pagos">
+            <h2>Pagos</h2>
+            <div class="container">
+                <div class="container-admin">
+                    <h3 class="admin-title">Administrador
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>En la sección de pagos la aplicación mostrará todos los pagos registrados en el sistema.
+                        <br>Para agregar un pago debes presionar el botón [+] Añadir Pago e ingresar la información
+                        relacionada con este, como Nombre del Pago, DNI o identificador del negocio vendedor,
+                        persona de
+                        contacto, teléfono, email, dirección y ciudad. Una vez ingresada esta información debes
+                        presionar
+                        "Guardar".
+                    </p>
+                </div>
+                <div class="container-vendedor">
+                    <h3 class="vendedor-title">Vendedor
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pen"></i></span>
+                        <span><i class="fa-solid fa-trash-can"></i></span>
+                    </h3>
+                    <p>ingresar pagos, modificar pagos, ver pagos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Soporte">
+            <h2>Soporte</h2>
+            <p>En esta sección encontrarás respuestas a las preguntas más comunes. Si no encuentras lo que buscas, no
+                dudes en contactarnos.</p>
+
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>¿Cuál es la diferencia entre un rol de Administrador y uno de Vendedor?</summary>
+                    <p>El <strong>Administrador</strong> tiene control total sobre el negocio: puede configurar la
+                        información del negocio, gestionar vendedores, productos, categorías y ver todos los reportes.Además puede ver las ventas y pagos totales o por vendedor, y tiene la capacidad de añadir, editar o eliminar cualquier registro en el sistema.
+                        El <strong>Vendedor</strong>, en cambio, tiene permisos más limitados, enfocados en registrar
+                        ventas, gestionar clientes y consultar la información que el administrador le permite ver.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cómo puedo registrar a un nuevo vendedor en mi negocio?</summary>
+                    <p>Como Administrador, ve a la sección <strong>"Vendedores"</strong> y presiona el botón de añadir
+                        [+]. Deberás ingresar el nombre y el email del vendedor. Una vez guardado, el vendedor podrá
+                        ingresar a la app con su email y será asignado automáticamente a tu negocio.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Olvidé mi contraseña, ¿cómo puedo recuperarla?</summary>
+                    <p>En la pantalla de inicio de sesión, encontrarás una opción de "¿Olvidaste tu contraseña?". Al
+                        hacer clic, se te pedirá tu correo electrónico y recibirás instrucciones para restablecerla.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cómo puedo dar de baja el servicio de Seller?</summary>
+                    <p>Para dar de baja el servicio de Seller, puedes contactarnos a través de nuestro correo de soporte: <a href="mailto:cguzman000@gmail.com">cguzman000@gmail .com</a>.</p>
+                </details>
+            </div>
+            <p>Si tu duda no fue resuelta, puedes escribirnos directamente a nuestro correo de soporte: <a
+                    href="mailto:cguzman000@gmail.com">cguzman000@gmail .com</a>.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div class="footer-logo">
+                <i class="fa-solid fa-shop"></i>
+                <span>Seller</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Términos y Condiciones</a>
+                <a href="#" class="footer-link">Política de Privacidad</a>
+                <a href="#" class="footer-link">Cookies</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Carlos Guzmán. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-dim);">
+                Impulsado por HTML5, CSS3 Glassmorphism & JavaScript Vanilla.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.addEventListener('click', function () {
+                    links.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
