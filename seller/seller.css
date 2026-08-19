@@ -21,6 +21,7 @@ body {
 
 main {
     text-align: justify;
+    color: rgb(50, 50, 50);
 }
 
 header {
@@ -48,27 +49,27 @@ h3 {
 }
 
 .btn-guardar {
-    background-color: #fff; 
-    color: #153b67; 
-    padding: 4px 15px; 
+    background-color: #fff;
+    color: #153b67;
+    padding: 4px 15px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 0px solid #153b67;
 }
 
-.btn-cancelar{
-    background-color: #fff; 
-    color: #153b67; 
-    padding: 4px 15px; 
+.btn-cancelar {
+    background-color: #fff;
+    color: #153b67;
+    padding: 4px 15px;
     border-radius: 20px;
     border: 0px solid #153b67;
 }
 
-.btn-añadir{
-    background-color: #b9ddfb; 
+.btn-añadir {
+    background-color: #b9ddfb;
     color: #153b67;
-    padding: 5px 15px; 
-    border-radius: 10px; 
+    padding: 5px 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border: 0px solid white;
 
@@ -86,8 +87,7 @@ h3 {
 }
 
 /* Regla compartida para ambas tarjetas */
-.container-admin,
-.container-vendedor {
+.container-admin {
     background-color: rgb(239, 238, 238);
     /* Ocupa exactamente la mitad del ancho del contenedor, descontando el gap */
     width: calc(50% - 5px);
@@ -102,12 +102,29 @@ h3 {
     cursor: pointer;
 }
 
-.container-admin:hover,
-.container-vendedor:hover {
+.container-vendedor {
+    background-color: rgb(255, 245, 223);
+    /* Ocupa exactamente la mitad del ancho del contenedor, descontando el gap */
+    width: calc(50% - 5px);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Esencial para que el padding no agrande la tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.container-admin:hover {
     border-color: #0077ff;
     box-shadow: 0 8px 10px rgba(7, 43, 226, 0.2);
+}
 
-
+.container-vendedor:hover {
+    border-color: #f69f11;
+    box-shadow: 0 8px 10px rgba(7, 43, 226, 0.2);
 }
 
 /* --- ADAPTACIÓN RESPONSIVE (Al achicar o minimizar la ventana) --- */
@@ -116,7 +133,7 @@ h3 {
         flex-direction: column;
         /* Cambia la orientación a vertical */
     }
-dedor tienes que
+
     .container-admin,
     .container-vendedor {
         width: 100%;
@@ -132,65 +149,85 @@ dedor tienes que
     color: #0077ff;
 }
 
-
-
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #ffffff;
-    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .nav-links {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 6px;
+    /* Permite que bajen de línea si la ventana es pequeña */
+    gap: 6px;
     justify-content: center;
+    /* Centra los botones si bajan de línea */
+    width: 100%;
 }
 
 .nav-link {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    /* Quitamos el flex: 1 1 auto para que mantengan su tamaño y no se estiren deformándose al quedar solos */
     gap: 4px;
-    padding: 6px 12px;
+    padding: 6px 10px;
     text-decoration: none;
     color: #4b5563;
-    background-color: #f3f4f6;
+    background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 6px;
-    font-size: 0.7rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     white-space: nowrap;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.nav-link i.material-icons {
+    font-size: 15px;
 }
 
 .nav-link:hover {
-    background-color: #e0f2fe;
+    background-color: #f0f9ff;
     color: #0284c7;
     border-color: #bae6fd;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(2, 132, 199, 0.1);
 }
 
 .nav-link.active {
-    background-color: #0099ff;
+    background-image: linear-gradient(135deg, #0099ff 0%, #0077ff 100%);
     color: #ffffff;
-    border-color: #0099ff;
-    box-shadow: 0 2px 6px rgba(0, 153, 255, 0.2);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(0, 153, 255, 0.3);
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding: 5px 10px;
+    }
+
     .nav-links {
-        justify-content: center;
+        gap: 4px;
     }
 
     .nav-link {
-        padding: 3px 4px;
+        padding: 6px 8px;
         font-size: 0.65rem;
+    }
+
+    .nav-link i.material-icons {
+        font-size: 14px;
     }
 }
 
@@ -207,13 +244,84 @@ nav {
     color: #10437e;
     cursor: pointer;
     outline: none;
-    list-style: none; /* Oculta el marcador por defecto */
+    list-style: none;
+    /* Oculta el marcador por defecto */
 }
 
 .faq-item summary::-webkit-details-marker {
-    display: none; /* Oculta el marcador en Chrome/Safari */
+    display: none;
+    /* Oculta el marcador en Chrome/Safari */
 }
 
 .faq-item p {
     padding-top: 10px;
+}
+
+/* Estilos para el formulario de Soporte */
+#Soporte fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#Soporte legend {
+    font-weight: 600;
+    color: #10437e;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.contact-info label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.contact-info input,
+.contact-info textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #f9fafb;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+    outline: none;
+    border-color: #0077ff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
+}
+
+#Soporte button {
+    background-color: #0077ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#Soporte button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 255, 0.2);
 }
